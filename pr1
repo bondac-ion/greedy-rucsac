@@ -1,0 +1,27 @@
+def subprogr(a):
+    b=0
+    for i in str(a):
+        b=b+int(i)
+    if b==m:
+        return True
+    else:
+        return False
+A=[]
+k=0
+def suma(a):
+    global k
+    global A
+    b=0
+    for i in str(a):
+        b=b+int(i)
+    if b==m:
+        k=k+1
+n=int(input('n:'))
+m=int(input('m:'))
+for i in range(0, n):
+    if subprogr(i):
+        suma(i)
+        A.append(i)
+        
+print('sunt',k,'numere in multime, iar suma este',m)
+print('numerele din multime sunt',A)
